@@ -30,7 +30,7 @@ author:
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/Z4xW7_BFaRcrHxfDySjKuQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   Promises (how, why, and what)
 -   How to use the `then`, `resolve`, `catch` methods
