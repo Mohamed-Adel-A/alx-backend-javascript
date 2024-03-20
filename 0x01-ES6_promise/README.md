@@ -22,7 +22,7 @@ author:
 
 **Read or watch**:
 
--   [Promise]([https://intranet.alxswe.com/rltoken/j_0FTFbkTg42JMcAbNPOVQ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) "Promise")
+-   [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) "Promise")
 -   [JavaScript Promise: An introduction](https://web.dev/articles/promises "JavaScript Promise: An introduction")
 -   [Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await "Await")
 -   [Async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function "Async")
