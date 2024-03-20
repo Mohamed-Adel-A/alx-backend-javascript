@@ -55,8 +55,8 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 -   All your files should end with a new line
 -   A `README.md` file, at the root of the folder of the project, is mandatory
 -   Your code should use the `js` extension
--   Your code will be tested using the [Jest Testing Framework](https://intranet.alxswe.com/rltoken/ECZpKsJ3fm1qRA7lDyhd_Q "Jest Testing Framework")
--   Your code will be analyzed using the linter [ESLint](https://intranet.alxswe.com/rltoken/Ttd9w5jERwTErJW3DDbVoQ "ESLint") along with specific rules that we’ll provide
+-   Your code will be tested using the [Jest Testing Framework](https://jestjs.io/ "Jest Testing Framework")
+-   Your code will be analyzed using the linter [ESLint](https://eslint.org/ "ESLint") along with specific rules that we’ll provide
 -   All of your functions must be exported
 
 ## Setup
