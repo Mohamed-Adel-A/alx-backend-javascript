@@ -231,6 +231,7 @@ bob@dylan:~$
 -   Directory: `0x00-ES6_basic`
 -   File: `0-constants.js`
 
+### 1. Block Scope
 Score: 0.0% (Checks completed: 0.0%)
 
 Given what you’ve read about `var` and hoisting, modify the variables inside the function `taskBlock` so that the variables aren’t overwritten inside the conditional block.
@@ -657,6 +658,7 @@ bob@dylan:~$
 -   Directory: `0x00-ES6_basic`
 -   File: `10-loops.js`
 
+### 11. Iterator
 Score: 0.0% (Checks completed: 0.0%)
 
 Write a function named `createEmployeesObject` that will receive two arguments:
