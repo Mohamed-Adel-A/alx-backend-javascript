@@ -22,11 +22,11 @@ author:
 
 **Read or watch**:
 
--   [Promise](https://intranet.alxswe.com/rltoken/j_0FTFbkTg42JMcAbNPOVQ "Promise")
--   [JavaScript Promise: An introduction](https://intranet.alxswe.com/rltoken/2Q2LzNFokcUwpA2u3FKG6Q "JavaScript Promise: An introduction")
--   [Await](https://intranet.alxswe.com/rltoken/UXb3S2PMBe-SLJ55isMcow "Await")
--   [Async](https://intranet.alxswe.com/rltoken/_K0C7pgEjwaIzU9RpwCb8g "Async")
--   [Throw / Try](https://intranet.alxswe.com/rltoken/UTjDgvKk5l892Xslh0vqcQ "Throw / Try")
+-   [Promise]([https://intranet.alxswe.com/rltoken/j_0FTFbkTg42JMcAbNPOVQ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) "Promise")
+-   [JavaScript Promise: An introduction](https://web.dev/articles/promises "JavaScript Promise: An introduction")
+-   [Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await "Await")
+-   [Async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function "Async")
+-   [Throw / Try](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw "Throw / Try")
 
 ## Learning Objectives
 
@@ -237,6 +237,8 @@ bob@dylan:~$
 -   Directory: `0x01-ES6_promise`
 -   File: `0-promise.js`
 
+----
+
 ### 1\. Don't make a promise...if you know you can't keep it
 
 mandatory
@@ -283,6 +285,8 @@ bob@dylan:~$
 -   Directory: `0x01-ES6_promise`
 -   File: `1-promise.js`
 
+----
+
 ### 2\. Catch me if you can!
 
 mandatory
@@ -322,6 +326,8 @@ bob@dylan:~$
 -   Directory: `0x01-ES6_promise`
 -   File: `2-then.js`
 
+----
+
 ### 3\. Handle multiple successful promises
 
 mandatory
@@ -355,6 +361,8 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x01-ES6_promise`
 -   File: `3-all.js`
+
+----
 
 ### 4\. Simple promise
 
@@ -396,6 +404,8 @@ bob@dylan:~$
 -   Directory: `0x01-ES6_promise`
 -   File: `4-user-promise.js`
 
+----
+
 ### 5\. Reject the promises
 
 mandatory
@@ -432,6 +442,8 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x01-ES6_promise`
 -   File: `5-photo-reject.js`
+
+----
 
 ### 6\. Handle multiple promises
 
@@ -470,6 +482,8 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x01-ES6_promise`
 -   File: `6-final-user.js`
+
+----
 
 ### 7\. Load balancer
 
@@ -526,6 +540,8 @@ bob@dylan:~$
 -   Directory: `0x01-ES6_promise`
 -   File: `7-load_balancer.js`
 
+----
+
 ### 8\. Throw error / try catch
 
 mandatory
@@ -565,6 +581,8 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x01-ES6_promise`
 -   File: `8-try.js`
+
+----
 
 ### 9\. Throw an error
 
@@ -607,6 +625,8 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x01-ES6_promise`
 -   File: `9-try.js`
+
+----
 
 ### 10\. Await / Async
 
