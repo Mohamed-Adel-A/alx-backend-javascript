@@ -1,6 +1,6 @@
 # 0x03. ES6 data manipulation
 
-JavaScriptES6
+`JavaScriptES6`
 
 -   By: Johann Kerbrat, Engineering Manager at Uber Works
 -   Weight: 1
@@ -21,15 +21,15 @@ JavaScriptES6
 
 **Read or watch**:
 
--   [Array](https://intranet.alxswe.com/rltoken/bcXqK1IaIHtrZ45sv0RxsQ "Array")
--   [Typed Array](https://intranet.alxswe.com/rltoken/YZ5RtzAPTaWtF00MYbXuVw "Typed Array")
--   [Set Data Structure](https://intranet.alxswe.com/rltoken/Ch8vq39y9QnlTMr8CymgEg "Set Data Structure")
--   [Map Data Structure](https://intranet.alxswe.com/rltoken/W29MV3f8Ii4HmeJSALNIpw "Map Data Structure")
--   [WeakMap](https://intranet.alxswe.com/rltoken/pSetFVFeIR660GPE0flPdg "WeakMap")
+-   [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array "Array")
+-   [Typed Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Typed_arrays "Typed Array")
+-   [Set Data Structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set "Set Data Structure")
+-   [Map Data Structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map "Map Data Structure")
+-   [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap "WeakMap")
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/vFyWo9TJ_4ypOC6uPi2low "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to use map, filter and reduce on arrays
 -   Typed arrays
@@ -212,6 +212,8 @@ bob@dylan:~$
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+---
+
 ### 1\. More mapping
 
 mandatory
@@ -248,6 +250,8 @@ bob@dylan:~$
 -   File: `1-get_list_student_ids.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 2\. Filter
 
@@ -287,6 +291,8 @@ bob@dylan:~$
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+---
+
 ### 3\. Reduce
 
 mandatory
@@ -322,6 +328,8 @@ bob@dylan:~$
 -   File: `3-get_ids_sum.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 4\. Combine
 
@@ -386,6 +394,8 @@ bob@dylan:~$
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+---
+
 ### 5\. Typed Arrays
 
 mandatory
@@ -425,6 +435,8 @@ bob@dylan:~$
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+---
+
 ### 6\. Set data structure
 
 mandatory
@@ -454,6 +466,8 @@ bob@dylan:~$
 -   File: `6-set.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 7\. More set data structure
 
@@ -489,6 +503,8 @@ bob@dylan:~$
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
+---
+
 ### 8\. Clean set
 
 mandatory
@@ -522,6 +538,8 @@ bob@dylan:~$
 -   File: `8-clean_set.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 9\. Map data structure
 
@@ -566,6 +584,8 @@ bob@dylan:~$
 -   File: `9-groceries_list.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 10\. More map data structure
 
@@ -616,6 +636,8 @@ bob@dylan:~$
 -   File: `10-update_uniq_items.js`
 
 Done? Help Check your code Ask for a new correction Get a sandbox QA Review
+
+---
 
 ### 11\. Weak link data structure
 
