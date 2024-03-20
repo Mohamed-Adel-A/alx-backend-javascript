@@ -1,3 +1,13 @@
+---
+created: 2024-03-20T13:42:54 (UTC +02:00)
+tags: []
+source: https://intranet.alxswe.com/projects/1225#task-11571
+author: 
+---
+
+# Project: 0x01. ES6 Promises | ALX Africa Intranet
+
+---
 #### In a nutshell…
 
 -   **Auto QA review:** 0.0/26 mandatory & 0.0/4 optional
