@@ -40,7 +40,7 @@ const app = http.createServer(async (req, res) => {
   } else if (req.url === '/students') {
     const responseParts = ['This is the list of our students'];
 
-      countStudents(DB_FILE)
+      countStudents(process.argv[2])
         .then((report) => {
           responseParts.push(report);
           const responseText = responseParts.join('\n');
