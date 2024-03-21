@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs');
+const app = express();
 
 function countStudents(path) {
   return new Promise((resolve, reject) => {
@@ -29,8 +31,6 @@ function countStudents(path) {
     });
   });
 }
-
-const app = express();
 
 app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
