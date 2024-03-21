@@ -16,6 +16,7 @@ const app = http.createServer((req, res) => {
       }
 
       const lines = data.trim().split('\n').slice(1); // Skip first row
+      console.log(lines);
       const students = {};
       lines.forEach(line => {
         const [firstname, lastname, age, field] = line.split(',');
