@@ -38,23 +38,23 @@ const app = http.createServer(async (req, res) => {
   } else if (req.url === '/students') {
     const responseParts = ['This is the list of our students'];
 
-      countStudents(process.argv[2])
-        .then((report) => {
-          responseParts.push(report);
-          const responseText = responseParts.join('\n');
-          res.setHeader('Content-Type', 'text/plain');
-          res.setHeader('Content-Length', responseText.length);
-          res.statusCode = 200;
-          res.write(Buffer.from(responseText));
-        })
-        .catch((err) => {
-          responseParts.push(err instanceof Error ? err.message : err.toString());
-          const responseText = responseParts.join('\n');
-          res.setHeader('Content-Type', 'text/plain');
-          res.setHeader('Content-Length', responseText.length);
-          res.statusCode = 200;
-          res.write(Buffer.from(responseText));
-        });
+    countStudents(process.argv[2])
+      .then((report) => {
+        responseParts.push(report);
+        const responseText = responseParts.join('\n');
+        res.setHeader('Content-Type', 'text/plain');
+        res.setHeader('Content-Length', responseText.length);
+        res.statusCode = 200;
+        res.write(Buffer.from(responseText));
+      })
+      .catch((err) => {
+        responseParts.push(err instanceof Error ? err.message : err.toString());
+        const responseText = responseParts.join('\n');
+        res.setHeader('Content-Type', 'text/plain');
+        res.setHeader('Content-Length', responseText.length);
+        res.statusCode = 200;
+        res.write(Buffer.from(responseText));
+      });
   }
 });
 
