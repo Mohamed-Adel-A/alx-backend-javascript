@@ -6,7 +6,8 @@ function countStudents(path) {
       if (err) {
         reject(new Error('Cannot load the database'));
       } else {
-        const students = data.split('\n').filter((line) => line !== '');
+        const lines = data.split('\n').filter((line) => line !== '');
+        const students = lines.slice(1);
         const studentsByField = {};
         students.forEach((student) => {
           const fields = student.split(',');
