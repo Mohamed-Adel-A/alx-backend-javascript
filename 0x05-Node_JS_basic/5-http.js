@@ -38,16 +38,25 @@ const app = http.createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
-    try {
-      
-      const output = await countStudents(process.argv[2]);
-      res.writeHead(200, { 'Content-Type': 'text/plain' });
-      res.write('This is the list of our students\n');
-      res.end(output);
-    } catch (error) {
-      res.writeHead(500, { 'Content-Type': 'text/plain' });
-      res.end(error.message);
-    }
+    const responseParts = ['This is the list of our students'];
+
+      countStudents(DB_FILE)
+        .then((report) => {
+          responseParts.push(report);
+          const responseText = responseParts.join('\n');
+          res.setHeader('Content-Type', 'text/plain');
+          res.setHeader('Content-Length', responseText.length);
+          res.statusCode = 200;
+          res.write(Buffer.from(responseText));
+        })
+        .catch((err) => {
+          responseParts.push(err instanceof Error ? err.message : err.toString());
+          const responseText = responseParts.join('\n');
+          res.setHeader('Content-Type', 'text/plain');
+          res.setHeader('Content-Length', responseText.length);
+          res.statusCode = 200;
+          res.write(Buffer.from(responseText));
+        });
   }
 });
 
