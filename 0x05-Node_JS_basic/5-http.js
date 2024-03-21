@@ -22,7 +22,7 @@ function countStudents(path) {
         result = `Number of students: ${students.length}\n`;
         for (const field in studentsByField) {
           if (Object.hasOwnProperty.call(studentsByField, field)) {
-            result += (`Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}`);
+            result += (`Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}\n`);
           }
         }
         resolve(result);
