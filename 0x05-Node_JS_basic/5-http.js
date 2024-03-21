@@ -42,6 +42,7 @@ const app = http.createServer(async (req, res) => {
       
       const output = await countStudents(process.argv[2]);
       res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.write('This is the list of our students\n');
       res.end(output);
     } catch (error) {
       res.writeHead(500, { 'Content-Type': 'text/plain' });
