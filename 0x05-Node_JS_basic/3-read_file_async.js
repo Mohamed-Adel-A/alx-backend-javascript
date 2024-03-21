@@ -1,12 +1,12 @@
 const fs = require('fs');
 
-const countStudents = (path) => {
+const countStudents = ((path) => {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) {
         reject(new Error('Cannot load the database'));
       } else {
-        const students = data.split('\n').filter(line => line !== '');
+        const students = data.split('\n').filter((line) => line !== '');
         const studentsByField = {};
         students.forEach((student) => {
           const fields = student.split(',');
@@ -26,6 +26,6 @@ const countStudents = (path) => {
       }
     });
   });
-};
+});
 
 module.exports = countStudents;
