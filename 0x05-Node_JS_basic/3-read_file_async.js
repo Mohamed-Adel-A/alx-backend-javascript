@@ -22,7 +22,7 @@ function countStudents(path) {
             console.log(`Number of students in ${field}: ${studentsByField[field].length}. List: ${studentsByField[field].join(', ')}`);
           }
         }
-        resolve();
+        resolve(true);
       }
     });
   });
