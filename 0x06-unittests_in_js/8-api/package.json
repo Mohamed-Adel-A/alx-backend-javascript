@@ -1,7 +1,7 @@
 {
   "name": "8-api",
   "version": "1.0.0",
-  "description": "A basic API for integration testing",
+  "description": "Basic API for integration testing",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
