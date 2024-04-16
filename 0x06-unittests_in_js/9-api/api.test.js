@@ -18,7 +18,7 @@ describe('Cart page', function() {
   });
 
   it('Test for GET / returns “Welcome to the payment system” exists', function(done) {
-    request.get('http://localhost:7865/cart/', function(error, response, body) {
+    request.get('http://localhost:7865/', function(error, response, body) {
       expect(response.statusCode).to.equal(200);
       expect(body).to.equal('Welcome to the payment system');
       done();
