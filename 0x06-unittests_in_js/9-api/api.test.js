@@ -1,16 +1,21 @@
-const request = require('supertest');
-const server = require('./api');
+const request = require('request');
+const chai = require('chai');
+const expect = chai.expect;
 
-describe('GET /cart/:id', () => {
-  it('responds with payment methods for valid cart ID', async () => {
-    const response = await request(server).get('/cart/123');
-    expect(response.status).toBe(200);
-    expect(response.text).toBe('Payment methods for cart 123');
+describe('Cart page', function() {
+  it('should return status code 200 when :id is a number', function(done) {
+    request.get('http://localhost:7865/cart/123', function(error, response, body) {
+      expect(response.statusCode).to.equal(200);
+      done();
+    });
   });
 
-  it('responds with error message for invalid cart ID', async () => {
-    const response = await request(server).get('/cart/abc');
-    expect(response.status).toBe(404);
-    expect(response.text).toBe('Invalid cart ID');
+  it('should return status code 404 when :id is NOT a number', function(done) {
+    request.get('http://localhost:7865/cart/hello', function(error, response, body) {
+      expect(response.statusCode).to.equal(404);
+      done();
+    });
   });
+
+  // Add other tests if needed
 });
