@@ -1,31 +1,33 @@
 const sinon = require('sinon');
-const assert = require('assert');
+const chai = require('chai');
+const expect = chai.expect;
+
 const sendPaymentRequestToApi = require('./5-payment');
-const Utils = require('./utils');
 
-describe('sendPaymentRequestToApi', () => {
-  let calculateNumberStub;
-  let consoleSpy;
+describe('sendPaymentRequestToApi', function() {
+  let consoleLogSpy;
 
-  beforeEach(() => {
-    calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(120);
-    consoleSpy = sinon.spy(console, 'log');
+  beforeEach(function() {
+    // Create a spy for console.log
+    consoleLogSpy = sinon.spy(console, 'log');
   });
 
-  afterEach(() => {
-    calculateNumberStub.restore();
-    consoleSpy.restore();
+  afterEach(function() {
+    // Restore the spy
+    consoleLogSpy.restore();
   });
 
-  it('should log correct message with total 120', () => {
+  it('should log the correct message and console should be called once with 100 and 20', function() {
     sendPaymentRequestToApi(100, 20);
-    sinon.assert.calledOnce(consoleSpy);
-    sinon.assert.calledWithExactly(consoleSpy, 'The total is: 120');
+
+    expect(consoleLogSpy.calledOnce).to.be.true;
+    expect(consoleLogSpy.calledWithExactly('The total is: 120')).to.be.true;
   });
 
-  it('should log correct message with total 20', () => {
+  it('should log the correct message and console should be called once with 10 and 10', function() {
     sendPaymentRequestToApi(10, 10);
-    sinon.assert.calledOnce(consoleSpy);
-    sinon.assert.calledWithExactly(consoleSpy, 'The total is: 20');
+
+    expect(consoleLogSpy.calledOnce).to.be.true;
+    expect(consoleLogSpy.calledWithExactly('The total is: 20')).to.be.true;
   });
 });
