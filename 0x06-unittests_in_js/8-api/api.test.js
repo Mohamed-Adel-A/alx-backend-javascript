@@ -1,10 +1,21 @@
-const request = require('supertest');
-const server = require('./app');
+const request = require('request');
+const chai = require('chai');
+const expect = chai.expect;
 
-describe('GET /', () => {
-  it('responds with welcome message', async () => {
-    const response = await request(server).get('/');
-    expect(response.status).toBe(200);
-    expect(response.text).toBe('Welcome to the payment system');
+describe('Index page', function() {
+  it('should return status code 200', function(done) {
+    request.get('http://localhost:7865', function(error, response, body) {
+      expect(response.statusCode).to.equal(200);
+      done();
+    });
   });
+
+  it('should return the correct result', function(done) {
+    request.get('http://localhost:7865', function(error, response, body) {
+      expect(body).to.equal('Welcome to the payment system');
+      done();
+    });
+  });
+
+  // Add other tests if needed
 });
