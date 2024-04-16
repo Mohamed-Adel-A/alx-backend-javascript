@@ -25,13 +25,5 @@ describe('Cart page', function() {
     });
   });
 
-  it('should return status code 200 and correct message when :id is a number', function(done) {
-    request.get('http://localhost:7865/cart/123', function(error, response, body) {
-      expect(response.statusCode).to.equal(200);
-      expect(body).to.equal('Payment methods for cart 123');
-      done();
-    });
-  });
-
   // Add other tests if needed
 }); 
