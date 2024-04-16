@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
+const PORT = 7865;
 
-app.get('/', function (request, response) { // Change route to '/'
-  response.send('Welcome to the payment system');
+app.get('/', (_, res) => {
+  res.send('Welcome to the payment system');
 });
 
-app.listen(7865, function () {
-  console.log('API available on localhost port 7865');
+app.listen(PORT, () => {
+  console.log(`API available on localhost port ${PORT}`);
 });
 
 module.exports = app;
